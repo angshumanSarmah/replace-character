@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Reverse Word Generator</title></head>
+<body>
+  <div id="common-content"></div>
+  <div class="about-container">
+    <div class="about">
+      <h1>About Us</h1>
+
+      <p>Welcome to our innovative Word/Sentence/Character Replacer web application! Our platform is dedicated to providing you with a powerful and efficient tool that simplifies the process of replacing words, sentences, and characters in your text. We focus on enhancing your editing capabilities, making your writing tasks quicker and more convenient.</p>
+    
+      <h2>Effortless Word Replacements</h2>
+      <p>With our Word Replacer feature, you can effortlessly replace specific words or phrases within your text. Whether you need to substitute a single word or perform extensive search and replace operations, our user-friendly interface streamlines the process. Say goodbye to manual word replacements and experience the ease of efficient word substitution.</p>
+    
+      <h2>Flexible Sentence Replacements</h2>
+      <p>Our Sentence Replacer feature empowers you to modify entire sentences with ease. Whether you want to rephrase a sentence to convey a different meaning or restructure your writing flow, our web app offers a seamless experience for sentence-level replacements. Achieve the desired impact and enhance your writing style effortlessly.</p>
+    
+      <h2>Targeted Character Replacements</h2>
+      <p>Need to replace specific characters or symbols in your text? Our Character Replacer feature allows you to make precise and targeted replacements, ensuring consistent formatting and accuracy. Whether you're correcting typos, transforming text for a specific purpose, or adjusting the appearance of certain characters, our web app provides a convenient solution for efficient character substitution.</p>
+    
+      <p>At our Word/Sentence/Character Replacer web app, we prioritize simplicity, efficiency, and user satisfaction. Our intuitive interface and powerful replacement capabilities are designed to streamline your editing process and empower your writing tasks. We focus on providing you with a hassle-free experience to save you time and effort.</p>
+    
+      <p>Experience the convenience and effectiveness of our Word/Sentence/Character Replacer web app. Simplify your editing process, improve your text consistency, and take control of your writing. Unlock new possibilities and optimize your writing workflow with our dedicated platform.</p>
+        
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <script>
+    // Load and insert the common.html content into the current page
+    fetch('common/navigation.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('common-content').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
